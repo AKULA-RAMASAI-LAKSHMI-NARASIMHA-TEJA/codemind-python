@@ -1,5 +1,2 @@
-s=input()
-k=s.split()
-b=k[::-1]
-c=' '.join(b)
-print(c)
+a=input()
+print(a[::-1])
