@@ -1,3 +1,1 @@
-a=int(input())
-b=a//10
-print(b)
+print(int(input())//10)
