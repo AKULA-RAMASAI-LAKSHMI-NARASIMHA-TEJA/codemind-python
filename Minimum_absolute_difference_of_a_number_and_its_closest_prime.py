@@ -23,4 +23,3 @@ else:
         print(n-pp)
     else:
         print(np-n)
-        
