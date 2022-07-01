@@ -1,13 +1,8 @@
-m,n=input().split()
+m,n=map(int,input().split())
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
 a=set(a)
 b=set(b)
-c=0
-for i in a:
-    if i not in b:
-        c+=1
-for i in b:
-    if i not in a:
-        c+=1
-print(c)
+c=a.intersection(b)
+d=a.union(b)
+print(len(d)-len(c))
