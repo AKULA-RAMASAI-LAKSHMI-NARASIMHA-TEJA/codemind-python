@@ -6,7 +6,7 @@ for i in a:
     if i not in b:
         b.append(i)
 for i in b:
-    if a.count(i)==i:
+    if i==a.count(i):
         print(i,end=' ')
         c=1
 if c==0:
