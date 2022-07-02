@@ -1,12 +1,10 @@
 s=input()
+s=s.lower()
 c=0
 for i in range(26):
-    if chr(97+i) in s or chr(65+i) in s:
-        pass
-    else:
-        c=1
-        break
-if c==1:
-    print("False")
+    if chr(97+i) in s:
+        c+=1
+if c==26:
+    print('True')
 else:
-    print("True")
+    print('False')
