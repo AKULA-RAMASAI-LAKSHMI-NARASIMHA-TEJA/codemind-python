@@ -1,11 +1,10 @@
 s=input()
-s=list(s)
 a=['a','e','i','o','u']
+c=0
 for i in a:
     if i in s:
-        continue
-    else:
-        print('False')
-        break
-else:
+        c+=1
+if c==5:
     print('True')
+else:
+    print('False')
