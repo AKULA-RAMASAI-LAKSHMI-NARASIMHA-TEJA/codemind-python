@@ -6,7 +6,7 @@ for i in s:
     if i==' ':
         continue
     else:
-        if i not in a:
+        if s.count(i)==1:
             a.append(i)
 a.sort()
 b=''
