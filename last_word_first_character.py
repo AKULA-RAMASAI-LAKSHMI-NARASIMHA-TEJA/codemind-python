@@ -1,4 +1,5 @@
 s=input()
 s=s.split()
-a=s[-1]
-print(a[0])
+for i in s[-1]:
+    print(i)
+    break
