@@ -1,14 +1,12 @@
 s=input()
 s=s.lower()
 s=s.split()
-b=[]
+a=[]
 c=0
-a=['a','e','i','o','u']
 for i in s:
     c=0
-    i=list(i)
     for j in i:
-        if j in a:
+        if j in 'aeiou':
             c+=1
-    b.append(c)
-print(*b)
+    a.append(c)
+print(*a)
