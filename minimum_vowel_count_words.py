@@ -1,14 +1,13 @@
-s=input()
-s=s.lower()
-s=s.split()
-b=[]
-c=0
-a=['a','e','i','o','u']
-for i in s:
-    c=0
-    i=list(i)
+a=input()
+a=a.lower()
+a=a.split()
+f=0
+c=[]
+for i in a:
+    b=0
     for j in i:
-        if j in a:
-            c+=1
-    b.append(c)
-print(b.count(min(b)))
+        if j in 'aeiou':
+            b+=1
+    c.append(b)
+d=min(c)
+print(c.count(d))
