@@ -8,8 +8,4 @@ for i in s:
     else:
         if s.count(i)==1:
             a.append(i)
-a.sort()
-b=0
-for i in a:
-    b+=1
-print(b)
+print(len(a))
