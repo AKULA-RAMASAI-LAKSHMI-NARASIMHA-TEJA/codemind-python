@@ -8,8 +8,4 @@ for i in s:
     else:
         if i not in a:
             a.append(i)
-a.sort()
-b=''
-for i in a:
-    b+=i
-print(len(b))
+print(len(a))
