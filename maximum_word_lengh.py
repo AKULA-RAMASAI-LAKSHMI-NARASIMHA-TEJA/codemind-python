@@ -1,6 +1,6 @@
 s=input()
-max=0
-for i in s.split():
-    if(max<len(i)):
-        max=len(i)
-print(max)
+s=s.split()
+a=[]
+for i in s:
+    a.append(len(i))
+print(max(a))
