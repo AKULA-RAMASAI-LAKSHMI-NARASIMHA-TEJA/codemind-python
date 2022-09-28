@@ -1,8 +1,7 @@
 s=input()
-s=s.split()
-a=list(s[-1])
-a.sort()
-b=a[0]
+s=s.split(' ')
+a=s[-1]
+b=min(a)
 if b.lower() in a:
     print(b.lower())
 else:
