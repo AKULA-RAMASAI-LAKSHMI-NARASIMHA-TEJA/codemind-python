@@ -1,14 +1,10 @@
-a=input()
-a=list(a)
-e=[]
-d=[]
-for i in a:
-    if i not in e:
-        e.append(i)
-for i in e:
-    if i in "aeiouAEIOU":
-        d.append(i)
-if d==" ":
+s=input()
+v=['a','e','i','o','u','A','E','I','O','U']
+a=[]
+for i in s:
+    if i in v and i not in a:
+        a.append(i)
+if len(a)==0:
     print(-1)
 else:
-    print(*d)
+    print(*a)
