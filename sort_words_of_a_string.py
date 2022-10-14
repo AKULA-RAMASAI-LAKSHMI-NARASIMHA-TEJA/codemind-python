@@ -1,16 +1,15 @@
-s=input()
-s=s.split(' ')
+s=list(input().split(' '))
 for i in s:
+    c=list(i)
     a=[]
-    b=list(i)
-    for i in b:
-        if ord(i)>=97 and ord(i)<=122:
-            a.append(i)
+    for j in c:
+        if ord(j)>=97 and ord(j)<=122:
+            a.append(j)
     a.sort()
     d=0
-    for j in range(0,len(b)):
-        if b[j] not in a:
-            print(b[j],end='')
+    for j in range(0,len(c)):
+        if c[j] not in a:
+            print(c[j],end='')
         else:
             print(a[d],end='')
             d+=1
