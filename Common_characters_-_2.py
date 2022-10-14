@@ -1,6 +1,6 @@
 s=input().lower()
 s1=(s.split(' '))[0]
-b=[]
+b=0
 for i in s1:
     a=0
     for j in s.split(' '):
@@ -9,5 +9,5 @@ for i in s1:
         else:
             a=0
     if a==len(s.split(' ')):
-        b.append(i)
-print(len(b))
+        b+=1
+print(b)
