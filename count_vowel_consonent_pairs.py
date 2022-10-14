@@ -1,12 +1,12 @@
 s=input()
-v=['a','e','i','o','u','A','E','I','O','U']
-x=s[0:len(s)//2]
-y=s[len(s)//2:len(s)]
-y=y[::-1]
-c=0
-for i in range(min(len(x),len(y))):
-    if x[i]==' ' or y[i]==' ':
+vow=['a','e','i','o','u','A','E','I','O','U']
+s1=s[0:len(s)//2]
+s2=s[len(s)//2:len(s)]
+s2=s2[::-1]
+a=0
+for i in range(min(len(s1),len(s2))):
+    if s1[i]==' ' or s2[i]==' ':
         continue
-    if(x[i] in v and y[i] not in v) or (x[i] not in v and y[i] in v):
-        c+=1
-print(c)
+    elif (s1[i] in vow and s2[i] not in vow)or(s1[i] not in vow and s2[i] in vow):
+        a+=1
+print(a)
