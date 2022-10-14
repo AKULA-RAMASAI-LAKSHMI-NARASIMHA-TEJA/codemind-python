@@ -1,11 +1,11 @@
 n=int(input())
-a=list(map(int,input().split()))
-b,c=0,0
-for i in range(0,n-2,2):
-    c+=1
-    if(a[i+1]>a[i] and a[i+1]>a[i+2]):
-        b+=1
-if c==b:
-    print(b)
+l=list(map(int,input().split()))
+a=b=0
+for i in range(0,len(l)-2,2):
+    b+=1
+    if(l[i+1]>l[i] and l[i+1]>l[i+2]):
+        a+=1
+if(a==b):
+    print(a)
 else:
     print(-1)
